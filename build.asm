@@ -2,6 +2,7 @@
 	.gba
 	.include "macros.asm"
 	.include "defines.asm"
+	.include "constants.asm"
 
 	.open INPUT_ROM, OUTPUT_ROM, 0x8000000
 
