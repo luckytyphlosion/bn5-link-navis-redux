@@ -152,16 +152,28 @@ Hook_PatchBPwrAtkChargeTime_Return:
 	mov r3, 1 ; remove flash flag
 
 	.org PatchTomahawkAirRaidEndlag
-	mov r0, 10
+	mov r0, 15
 
-	.org PatchTomahawkAirRaidWindup
-	mov r0, 8
+	.org PatchNumberDieEndlag
+	mov r0, 3
+
+	.org PatchNinjaStarEndlag
+	mov r0, 3
+
+	.org PatchFrogSmackEndlag
+	mov r0, 3
+
+	; .org PatchTomahawkAirRaidWindup
+	; mov r0, 8
 
 	.org PatchNumberSoulNullChipBonus
 	mov r1, oNaviStats_NaviIndex
 	bl GetBattleNaviStatsByte_AllianceFromBattleObject
 	cmp r0, NAVI_NUMBERMAN
 	; bne PatchNumberSoulNullChipBonus_NotNumberMan
+
+	.org PatchShadowmanMoveFrames
+	.byte 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
 
 	.org PatchShuffleCount
 	mov r0, 2

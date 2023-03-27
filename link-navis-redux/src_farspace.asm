@@ -6,7 +6,9 @@ Hook_PatchCheckFormForCustSlot9to10:
 	ldr r0, [r0, oToolkit_BattleStatePtr]
 	ldrb r0, [r0, oBattleState_NetworkSide]
 	mov r1, oNaviStats_NaviIndex
-	bl GetBattleNaviStatsByte_AllianceFromBattleObject_longcall
+	ldr r2, =GetBattleNaviStatsByte|1
+	mov lr, pc
+	bx r2
 	mov r7, r0
 	ldr r0, =Hook_PatchCheckFormForCustSlot9to10_Return|1
 	bx r0

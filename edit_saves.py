@@ -36,6 +36,7 @@ SAVE_SIZE = 0x7c14
 
 NAVI_STAT_FST_BARR = 0x6
 NAVI_STAT_CUST_LEVEL = 0xa
+NAVI_STAT_UNDERSHIRT = 0x1d
 NAVI_STAT_CHIP_CHARGE = 0x39 # doesn't directly control chip charge but deals with charge time
 NAVI_STAT_MAX_BASE_HP = 0x3e
 NAVI_STAT_CUR_HP = 0x40
@@ -127,6 +128,9 @@ class Save:
                 print(f"Cannot write to {save_filename}, try closing any emulators/programs using the save.")
 
     def edit_save(self):
+        # all navis get undershirt
+        self.write_navi_stats_byte(1, NAVI_STAT_UNDERSHIRT)
+
         # hp
         self.write_navi_stats_hword(self.hp, NAVI_STAT_MAX_BASE_HP)
         self.write_navi_stats_hword(self.hp, NAVI_STAT_CUR_HP)

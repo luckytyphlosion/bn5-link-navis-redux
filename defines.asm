@@ -24,9 +24,14 @@
 	.vdefinelabel ChipInfo, 0x0801e214, 0x0801e210
 	.vdefinelabel GoldChipTable, 0x8025ea0, 0x8025ea4
 	.vdefinelabel PatchShuffleCount, 0x8023d10, 0x8023d0c
+	.vdefinelabel PatchNumberDieEndlag, 0x800fafa, 0x800faf2
+	.vdefinelabel PatchNinjaStarEndlag, 0x80f9776, 0x80f985e
+	.vdefinelabel PatchFrogSmackEndlag, 0x80f1c0a, 0x80f1cf2
+	.vdefinelabel PatchShadowmanMoveFrames, (0x801D462+NAVI_SHADOWMAN*0xb), (0x801d45e+NAVI_SHADOWMAN*0xb)
 
 	; version-specific defines for game functions
 	.vdefinelabel GetBattleNaviStatsByte_AllianceFromBattleObject, 0x8010df6, 0x8010dee
+	.vdefinelabel GetBattleNaviStatsByte, 0x8010D6C, 0x8010D64
 
 	; version-independent defines
 	.definelabel PatchLinkNaviOpenPETMenu, 0x0800549a

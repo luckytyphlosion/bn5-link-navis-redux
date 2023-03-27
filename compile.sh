@@ -24,7 +24,7 @@ cp bn5c-link-navis-redux.gba tc_shadowman.gba
 cp bn5c-link-navis-redux.gba tc_toadman.gba
 
 # Make patches
-#mkdir -p "out_patch/bn5_gate_redux/v1.0.0"
-#./tools/floating/flips.exe -c -b "bn5p.gba" "bn5p-link-navis-redux.gba" "out_patch/bn5_gate_redux/v1.0.0/BRBE_00.bps"
-#./tools/floating/flips.exe -c -b "bn5c.gba" "bn5c-link-navis-redux.gba" "out_patch/bn5_gate_redux/v1.0.0/BRKE_00.bps"
+mkdir -p "out_patch/bn5_gate_redux/v1.0.0"
+./tools/floating/flips.exe -c -b "bn5p.gba" "bn5p-link-navis-redux.gba" "out_patch/bn5_gate_redux/v1.0.0/BRBE_00.bps"
+./tools/floating/flips.exe -c -b "bn5c.gba" "bn5c-link-navis-redux.gba" "out_patch/bn5_gate_redux/v1.0.0/BRKE_00.bps"
 #touch out_patch/bn5_gate_redux/info.toml
