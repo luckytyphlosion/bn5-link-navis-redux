@@ -115,6 +115,21 @@
 	bl GetBattleNaviStatsByte_AllianceFromBattleObject
 	cmp r0, NAVI_SHADOWMAN
 
+	.org PatchCheckShadowSoulBackstab_Katana
+	mov r1, oNaviStats_NaviIndex
+
+	.org PatchCheckShadowSoulBackstab_MoonBlde
+	mov r1, oNaviStats_NaviIndex
+
+	.org PatchCheckShadowProtoSoulVarswrd
+	mov r1, oNaviStats_NaviIndex
+
+	.org PatchCheckShadowProtoSoulNeoVari
+	mov r1, oNaviStats_NaviIndex
+
+	.org PatchCheckShadowSoulSonicBoom
+	mov r1, oNaviStats_NaviIndex
+
 	.org PatchCheckFormForCustSlot9to10
 	ldr r0, =Hook_PatchCheckFormForCustSlot9to10|1
 	bx r0

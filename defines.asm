@@ -8,6 +8,12 @@
 	.vdefinelabel PatchCheckFormSpecificABtnPwrAtk, 0x8010928, 0x8010920
 	.vdefinelabel PatchCheckFormFor2xABtnPwrAtk, 0x80103d4, 0x80103cc
 	.vdefinelabel PatchCheckShadowSoulBackstab, 0x80ebd2a, 0x80ebe12
+	.vdefinelabel PatchCheckShadowSoulBackstab_Katana, 0x80ef9d0, 0x80efab8
+	.vdefinelabel PatchCheckShadowSoulBackstab_MoonBlde, 0x80ef7d6, 0x80ef8be
+	.vdefinelabel PatchCheckShadowProtoSoulVarswrd, 0x80ed5aa, 0x80ed692
+	.vdefinelabel PatchCheckShadowProtoSoulNeoVari, 0x80edfb6, 0x80ee09e
+	.vdefinelabel PatchCheckShadowSoulSonicBoom, 0x80ed666, 0x80ed74e
+
 	.vdefinelabel PatchCheckForForcedCustSize, 0x8025c2a, 0x8025c2e
 	.vdefinelabel PatchCheckFormForCustSlot9to10, 0x8023cf8, 0x8023cf4
 	.vdefinelabel PatchLoadShuffleGfx, 0x80240fe, 0x8024102
